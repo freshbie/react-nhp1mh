@@ -8,7 +8,9 @@ import {
   userNameValidator,
   emailValidator,
   addressValidator,
-  requiredValidator
+  requiredValidator,
+  phoneValidator,
+  dobValidator
 } from "./validators.jsx";
 
 import { title } from "./data.jsx";
@@ -42,6 +44,15 @@ export const AccountDetails = (
       validator={userNameValidator}
     />
     <Field
+      key={"DOB"}
+      id={"DOB"}
+      name={"DOB"}
+      label={"Date of Birth"}
+      component={FormInput}
+      type={"date"}
+      validator={dobValidator}
+    />
+    <Field
       key={"email"}
       id={"email"}
       name={"email"}
@@ -65,7 +76,7 @@ export const AccountDetails = (
       name={"userName"}
       label={"Phone"}
       component={FormInput}
-      validator={userNameValidator}
+      validator={phoneValidator}
     />
   </div>
 );
