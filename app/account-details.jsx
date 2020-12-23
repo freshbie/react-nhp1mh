@@ -2,28 +2,41 @@ import * as React from "react";
 
 import { Field } from "@progress/kendo-react-form";
 
-import { FormInput, FormUpload } from "./form-components.jsx";
+import { FormInput, FormRadioGroup } from "./form-components.jsx";
 
 import {
   userNameValidator,
   emailValidator,
-  passwordValidator
+  addressValidator,
+  requiredValidator
 } from "./validators.jsx";
+
+import { title } from "./data.jsx";
 
 export const AccountDetails = (
   <div>
     <Field
-      key={"userName"}
-      id={"userName"}
-      name={"First Name"}
+      key={"title"}
+      id={"title"}
+      name={"title"}
+      label={"Title"}
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={title}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"FirstName"}
+      id={"FirstName"}
+      name={"FirstName"}
       label={"First Name"}
       component={FormInput}
       validator={userNameValidator}
     />
     <Field
-      key={"userName"}
-      id={"userName"}
-      name={"userName"}
+      key={"LastName"}
+      id={"LastName"}
+      name={"LastName"}
       label={"Last Name"}
       component={FormInput}
       validator={userNameValidator}
@@ -39,13 +52,12 @@ export const AccountDetails = (
       validator={emailValidator}
     />
     <Field
-      key={"password"}
-      id={"password"}
-      name={"password"}
+      key={"Address"}
+      id={"Address"}
+      name={"Address"}
       label={"Address"}
-      type={"password"}
       component={FormInput}
-      validator={passwordValidator}
+      validator={addressValidator}
     />
     <Field
       key={"userName"}

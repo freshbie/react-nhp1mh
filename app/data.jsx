@@ -6,6 +6,13 @@ export const genders = [
     { label: 'Other', value: 'other'}
 ];
 
+export const title = [
+    { label: 'Mr', value: 'Mr'},
+    { label: 'Mrs', value: 'Mrs'},
+    { label: 'Miss', value: 'Miss'},
+    { label: 'Ms', value: 'Ms'}
+];
+
 export const countries = [
     'Albania',
     'Andorra',
