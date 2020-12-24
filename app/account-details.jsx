@@ -10,10 +10,12 @@ import {
   addressValidator,
   requiredValidator,
   phoneValidator,
-  dobValidator
+  dobValidator,
+  driverValidator,
+  childValidator
 } from "./validators.jsx";
 
-import { title } from "./data.jsx";
+import { title, resident, lihold } from "./data.jsx";
 
 export const AccountDetails = (
   <div>
@@ -71,12 +73,48 @@ export const AccountDetails = (
       validator={addressValidator}
     />
     <Field
-      key={"userName"}
-      id={"userName"}
-      name={"userName"}
+      key={"phone"}
+      id={"phone"}
+      name={"phone"}
       label={"Phone"}
       component={FormInput}
       validator={phoneValidator}
+    />
+    <Field
+      key={"resident"}
+      id={"resident"}
+      name={"resident"}
+      label={"Are you a NZ Resident?"}
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={resident}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"driverlicence"}
+      id={"driverlicence"}
+      name={"driverlicence"}
+      label={"What is your Driver Licence Number?"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"lihold"}
+      id={"lihold"}
+      name={"lihold"}
+      label={"What type of Licence do you hold?"}
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={lihold}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"children"}
+      id={"children"}
+      name={"children"}
+      label={"How many dependent children do you have?"}
+      component={FormInput}
+      validator={childValidator}
     />
   </div>
 );

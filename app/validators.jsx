@@ -5,22 +5,19 @@ const emailRegex = new RegExp(/\S+@\S+\.\S+/);
 const phoneRegex = new RegExp(/^[0-9 ()+-]+$/);
 const ccardRegex = new RegExp(/^[0-9-]+$/);
 const cvcRegex = new RegExp(/^[0-9]+$/);
-const dobRegex = new RegExp();
 
 export const termsValidator = value =>
   value ? "" : "It's required to agree with Terms and Conditions.";
+export const childValidator = value => (value ? "" : "This field is required.");
+export const dobValidator = value => (value ? "" : "This field is required.");
+export const driverValidator = value =>
+  value ? "" : "This field is required.";
 export const emailValidator = value =>
   !value
     ? "Email field is required."
     : emailRegex.test(value)
     ? ""
     : "Email is not valid format.";
-export const dobValidator = value =>
-  !value
-    ? "DOB is required."
-    : dobRegex.test(value)
-    ? ""
-    : "DOB is not valid format.";
 export const nameValidator = value =>
   !value
     ? "Full Name is required"
@@ -59,7 +56,7 @@ export const arrivalDateValidator = value =>
   value ? "" : "Arriaval Date is required";
 export const colorValidator = value => (value ? "" : "Color is required.");
 export const requiredValidator = value =>
-  value ? "" : "Error: This field is required.";
+  value ? "" : "This field is required.";
 export const passwordValidator = value =>
   value && value.length > 8 ? "" : "Password must be at least 8 symbols.";
 export const addressValidator = value => (value ? "" : "Address is required.");
