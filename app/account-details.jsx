@@ -31,7 +31,6 @@ export const AccountDetails = (
       layout={"horizontal"}
       component={FormRadioGroup}
       data={title}
-      validator={requiredValidator}
     />
     <Field
       key={"FirstName"}
@@ -39,7 +38,6 @@ export const AccountDetails = (
       name={"FirstName"}
       label={"First Name"}
       component={FormInput}
-      validator={userNameValidator}
     />
     <Field
       key={"LastName"}
@@ -47,7 +45,6 @@ export const AccountDetails = (
       name={"LastName"}
       label={"Last Name"}
       component={FormInput}
-      validator={userNameValidator}
     />
     <Field
       key={"DOB"}
@@ -56,7 +53,6 @@ export const AccountDetails = (
       label={"Date of Birth"}
       component={FormInput}
       type={"date"}
-      validator={dobValidator}
     />
     <Field
       key={"email"}
@@ -66,7 +62,6 @@ export const AccountDetails = (
       hint={"Hint: Enter your personal email address."}
       type={"email"}
       component={FormInput}
-      validator={emailValidator}
     />
     <Field
       key={"Address"}
@@ -75,7 +70,6 @@ export const AccountDetails = (
       label={"What is your Home Address ?"}
       hint={"Street"}
       component={FormInput}
-      validator={addressValidator}
     />
     <Field
       key={"suburb"}
@@ -83,7 +77,6 @@ export const AccountDetails = (
       name={"suburb"}
       hint={"Suburb"}
       component={FormInput}
-      validator={addressValidator}
     />
     <Field
       key={"postcode"}
@@ -91,7 +84,6 @@ export const AccountDetails = (
       name={"postcode"}
       hint={"Post Code"}
       component={FormInput}
-      validator={addressValidator}
     />
     <Field
       key={"phone"}
@@ -100,7 +92,6 @@ export const AccountDetails = (
       label={"What are your phone numbers ? (Please provide atleast two)"}
       hint={"Hint: Your personal number"}
       component={FormInput}
-      validator={phoneValidator}
     />
     <Field
       key={"a_phone"}
@@ -108,7 +99,6 @@ export const AccountDetails = (
       name={"a_phone"}
       hint={"Hint: Your Home or Work number"}
       component={FormInput}
-      validator={phoneValidator}
     />
     <Field
       key={"resident"}
@@ -118,7 +108,6 @@ export const AccountDetails = (
       layout={"horizontal"}
       component={FormRadioGroup}
       data={resident}
-      validator={requiredValidator}
     />
     <Field
       key={"driverlicence"}
@@ -126,7 +115,6 @@ export const AccountDetails = (
       name={"driverlicence"}
       label={"What is your Driver Licence Number ?"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"lihold"}
@@ -136,7 +124,6 @@ export const AccountDetails = (
       layout={"horizontal"}
       component={FormRadioGroup}
       data={lihold}
-      validator={requiredValidator}
     />
     <Field
       key={"children"}
@@ -144,7 +131,6 @@ export const AccountDetails = (
       name={"children"}
       label={"How many dependent children do you have ?"}
       component={FormInput}
-      validator={childValidator}
     />
     <Field
       key={"emp"}
@@ -154,7 +140,6 @@ export const AccountDetails = (
       layout={"horizontal"}
       component={FormRadioGroup}
       data={emp}
-      validator={requiredValidator}
     />
     <Field
       key={"occupation"}
@@ -162,7 +147,6 @@ export const AccountDetails = (
       name={"occupation"}
       label={"What is your occupation ?"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"employer"}
@@ -171,7 +155,6 @@ export const AccountDetails = (
       label={"Who is your employer ?"}
       hint={"Employeer Name"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"employer_address"}
@@ -179,7 +162,6 @@ export const AccountDetails = (
       name={"employer_address"}
       hint={"Employer Address"}
       component={FormInput}
-      validator={addressValidator}
     />
     <Field
       key={"employer_suburb"}
@@ -187,7 +169,6 @@ export const AccountDetails = (
       name={"employer_suburb"}
       hint={"Employer Suburb"}
       component={FormInput}
-      validator={addressValidator}
     />
     <Field
       key={"emp_duration"}
@@ -195,7 +176,6 @@ export const AccountDetails = (
       name={"emp_duration"}
       label={"How long have you been employed there ?"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>

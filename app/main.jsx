@@ -6,10 +6,10 @@ import { Button } from "@progress/kendo-react-buttons";
 import { Stepper } from "@progress/kendo-react-layout";
 
 import { AccountDetails } from "./account-details.jsx";
-import { PersonalDetails } from "./personal-details.jsx";
+import { LoanDetails } from "./loan-details.jsx";
 import { PaymentDetails } from "./payment-details.jsx";
 
-const stepPages = [AccountDetails, PersonalDetails, PaymentDetails];
+const stepPages = [AccountDetails, LoanDetails, PaymentDetails];
 
 export const App = () => {
   const [step, setStep] = React.useState(0);
