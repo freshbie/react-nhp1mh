@@ -19,6 +19,10 @@ import { title, resident, lihold, emp } from "./data.jsx";
 
 export const AccountDetails = (
   <div>
+    <br />
+    <p>
+      <b>Main Applicant</b>
+    </p>
     <Field
       key={"title"}
       id={"title"}
