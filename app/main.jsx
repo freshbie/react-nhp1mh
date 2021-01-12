@@ -89,7 +89,10 @@ export const App = () => {
                 <div>
                   {step !== 0 ? (
                     <Button
-                      style={{ marginRight: "16px" }}
+                      style={{
+                        marginRight: "16px",
+                        backgroundColor: "#BBBB14"
+                      }}
                       onClick={onPrevClick}
                     >
                       Previous

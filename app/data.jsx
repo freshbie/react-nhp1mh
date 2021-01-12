@@ -22,6 +22,13 @@ export const lihold = [
   { label: "Restricted", value: "Restricted" },
   { label: "Full", value: "Full" }
 ];
+export const emp = [
+  { label: "Yes, full time", value: "Yes, full time" },
+  { label: "Yes, part time", value: "Yes, part time" },
+  { label: "Yes, self employed", value: "Yes, self employed" },
+  { label: "Yes, casual", value: "Yes, casual" },
+  { label: "No, unemployed", value: "No, unemployed" }
+];
 
 export const countries = [
   "Albania",

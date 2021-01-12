@@ -15,7 +15,7 @@ import {
   childValidator
 } from "./validators.jsx";
 
-import { title, resident, lihold } from "./data.jsx";
+import { title, resident, lihold, emp } from "./data.jsx";
 
 export const AccountDetails = (
   <div>
@@ -68,7 +68,24 @@ export const AccountDetails = (
       key={"Address"}
       id={"Address"}
       name={"Address"}
-      label={"Address"}
+      label={"What is your Home Address ?"}
+      hint={"Street"}
+      component={FormInput}
+      validator={addressValidator}
+    />
+    <Field
+      key={"suburb"}
+      id={"suburb"}
+      name={"suburb"}
+      hint={"Suburb"}
+      component={FormInput}
+      validator={addressValidator}
+    />
+    <Field
+      key={"postcode"}
+      id={"postcode"}
+      name={"postcode"}
+      hint={"Post Code"}
       component={FormInput}
       validator={addressValidator}
     />
@@ -76,7 +93,16 @@ export const AccountDetails = (
       key={"phone"}
       id={"phone"}
       name={"phone"}
-      label={"Phone"}
+      label={"What are your phone numbers ? (Please provide atleast two)"}
+      hint={"Hint: Your personal number"}
+      component={FormInput}
+      validator={phoneValidator}
+    />
+    <Field
+      key={"a_phone"}
+      id={"a_phone"}
+      name={"a_phone"}
+      hint={"Hint: Your Home or Work number"}
       component={FormInput}
       validator={phoneValidator}
     />
@@ -84,7 +110,7 @@ export const AccountDetails = (
       key={"resident"}
       id={"resident"}
       name={"resident"}
-      label={"Are you a NZ Resident?"}
+      label={"Are you a NZ Resident ?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={resident}
@@ -94,7 +120,7 @@ export const AccountDetails = (
       key={"driverlicence"}
       id={"driverlicence"}
       name={"driverlicence"}
-      label={"What is your Driver Licence Number?"}
+      label={"What is your Driver Licence Number ?"}
       component={FormInput}
       validator={driverValidator}
     />
@@ -102,7 +128,7 @@ export const AccountDetails = (
       key={"lihold"}
       id={"lihold"}
       name={"lihold"}
-      label={"What type of Licence do you hold?"}
+      label={"What type of Licence do you hold ?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={lihold}
@@ -112,9 +138,35 @@ export const AccountDetails = (
       key={"children"}
       id={"children"}
       name={"children"}
-      label={"How many dependent children do you have?"}
+      label={"How many dependent children do you have ?"}
       component={FormInput}
       validator={childValidator}
+    />
+    <Field
+      key={"emp"}
+      id={"emp"}
+      name={"emp"}
+      label={"Are you employed ?"}
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={emp}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"occupation"}
+      id={"occupation"}
+      name={"occupation"}
+      label={"What is your occupation ?"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"employer"}
+      id={"employer"}
+      name={"employer"}
+      label={"Who is your employer ?"}
+      component={FormInput}
+      validator={driverValidator}
     />
   </div>
 );
