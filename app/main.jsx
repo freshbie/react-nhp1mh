@@ -7,9 +7,9 @@ import { Stepper } from "@progress/kendo-react-layout";
 
 import { AccountDetails } from "./account-details.jsx";
 import { LoanDetails } from "./loan-details.jsx";
-import { PaymentDetails } from "./payment-details.jsx";
+import { SecurityDetails } from "./security-details.jsx";
 
-const stepPages = [AccountDetails, LoanDetails, PaymentDetails];
+const stepPages = [AccountDetails, LoanDetails, SecurityDetails];
 
 export const App = () => {
   const [step, setStep] = React.useState(0);
@@ -83,9 +83,6 @@ export const App = () => {
                 }}
                 className={"k-form-buttons k-buttons-end"}
               >
-                <span style={{ alignSelf: "center" }}>
-                  Step {step + 1} of 3
-                </span>
                 <div>
                   {step !== 0 ? (
                     <Button
@@ -104,6 +101,7 @@ export const App = () => {
                     primary={true}
                     disabled={!formRenderProps.allowSubmit}
                     onClick={formRenderProps.onSubmit}
+                    style={{ backgroundColor: "#BBBB14", color: "#000000" }}
                   >
                     {isLastStep ? "Submit" : "Next"}
                   </Button>

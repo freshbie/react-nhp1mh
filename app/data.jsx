@@ -32,15 +32,6 @@ export const emp = [
 
 export const cycle = ["Weekly", "Fornightly", "Monthly"];
 
-export const sizes = [
-  "X-Small",
-  "Small",
-  "Medium",
-  "Large",
-  "X-Large",
-  "2X-Large"
-];
-
 export const purpose = [
   "Car Purchase",
   "Travel",

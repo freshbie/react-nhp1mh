@@ -2,11 +2,15 @@ import * as React from "react";
 
 import { Field } from "@progress/kendo-react-form";
 
-import { FormInput, FormDropDownList } from "./form-components.jsx";
+import {
+  FormInput,
+  FormDropDownList,
+  FormRadioGroup
+} from "./form-components.jsx";
 
 import { requiredValidator, driverValidator } from "./validators.jsx";
 
-import { cycle, purpose } from "./data.jsx";
+import { cycle, purpose, resident } from "./data.jsx";
 
 export const LoanDetails = (
   <div>
@@ -357,6 +361,27 @@ export const LoanDetails = (
       placeholder={"Estimated Value $"}
       placeholder={"Estimated Value $"}
       component={FormInput}
+    />
+    <br />
+    <Field
+      key={"j_bank"}
+      id={"j_bank"}
+      name={"j_bank"}
+      label={
+        "Have you or your joint applicant been declared bankrupt, gone through the No Asset Procedure or have a Summary Installment Order?"
+      }
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={resident}
+    />
+    <Field
+      key={"i_fcu"}
+      id={"i_fcu"}
+      name={"i_fcu"}
+      label={"Is your income paid into a First Credit Union account?"}
+      layout={"horizontal"}
+      component={FormRadioGroup}
+      data={resident}
     />
   </div>
 );
