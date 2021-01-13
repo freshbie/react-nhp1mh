@@ -319,5 +319,85 @@ export const LoanDetails = (
       component={FormInput}
       validator={driverValidator}
     />
+    <br />
+    <p>
+      <b>What do you owe(Liabilities) ?</b>
+    </p>
+    <Field
+      key={"a_home"}
+      id={"a_home"}
+      name={"a_home"}
+      label={"First Mortgage"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_household"}
+      id={"a_household"}
+      name={"a_household"}
+      label={"Motor Vehicles"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_motor"}
+      id={"a_motor"}
+      name={"a_motor"}
+      label={"Overdrafts"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_savings"}
+      id={"a_savings"}
+      name={"a_savings"}
+      label={"Credit Card Debt"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_home"}
+      id={"a_home"}
+      name={"a_home"}
+      label={"Store cards/Hire purchases"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_household"}
+      id={"a_household"}
+      name={"a_household"}
+      label={"Student Loan"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_motor"}
+      id={"a_motor"}
+      name={"a_motor"}
+      label={"Personal Loan/s"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <br />
+    <p>
+      <b>Total Liabilities</b>
+    </p>
+    <Field
+      key={"t_assets"}
+      id={"t_assets"}
+      name={"t_assets"}
+      placeholder={"Estimated Value $"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
   </div>
 );
