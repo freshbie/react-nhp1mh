@@ -114,5 +114,59 @@ export const LoanDetails = (
       component={FormInput}
       validator={driverValidator}
     />
+    <br />
+    <p>
+      <b>What do you own(Assets) ?</b>
+    </p>
+    <br />
+    <Field
+      key={"a_home"}
+      id={"a_home"}
+      name={"a_home"}
+      label={"Home"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_household"}
+      id={"a_household"}
+      name={"a_household"}
+      label={"Household Contents"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_motor"}
+      id={"a_motor"}
+      name={"a_motor"}
+      label={"Motor Vehicle/s"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"a_savings"}
+      id={"a_savings"}
+      name={"a_savings"}
+      label={"Savings"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <br />
+    <p>
+      <b>Total Assets</b>
+    </p>
+    <Field
+      key={"t_assets"}
+      id={"t_assets"}
+      name={"t_assets"}
+      placeholder={"Estimated Value $"}
+      placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
   </div>
 );
