@@ -4,11 +4,7 @@ import { Field } from "@progress/kendo-react-form";
 
 import { FormInput, FormDropDownList } from "./form-components.jsx";
 
-import {
-  nameValidator,
-  requiredValidator,
-  driverValidator
-} from "./validators.jsx";
+import { requiredValidator, driverValidator } from "./validators.jsx";
 
 import { cycle, purpose } from "./data.jsx";
 
@@ -50,7 +46,6 @@ export const LoanDetails = (
       label={"What is the purpose of this loan?"}
       component={FormDropDownList}
       data={purpose}
-      validator={requiredValidator}
     />
     <Field
       key={"other_purpose"}
@@ -58,7 +53,6 @@ export const LoanDetails = (
       name={"other_purpose"}
       placeholder={"If other, please state the reason"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -75,7 +69,6 @@ export const LoanDetails = (
       label={"Net income after tax"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"income"}
@@ -83,7 +76,6 @@ export const LoanDetails = (
       name={"income"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"j_income_cycle"}
@@ -92,7 +84,6 @@ export const LoanDetails = (
       label={"Joint applicant's income"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"j_income"}
@@ -100,7 +91,6 @@ export const LoanDetails = (
       name={"j_income"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -112,7 +102,6 @@ export const LoanDetails = (
       name={"t_income"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -125,7 +114,6 @@ export const LoanDetails = (
       label={"Home"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_household"}
@@ -134,7 +122,6 @@ export const LoanDetails = (
       label={"Household Contents"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_motor"}
@@ -143,7 +130,6 @@ export const LoanDetails = (
       label={"Motor Vehicle/s"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_savings"}
@@ -152,7 +138,6 @@ export const LoanDetails = (
       label={"Savings"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -165,7 +150,6 @@ export const LoanDetails = (
       placeholder={"Estimated Value $"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -178,7 +162,6 @@ export const LoanDetails = (
       label={"Mortage/Rent/Board"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"rent"}
@@ -186,7 +169,6 @@ export const LoanDetails = (
       name={"rent"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"loan_cycle"}
@@ -195,7 +177,6 @@ export const LoanDetails = (
       label={"Other loans"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"o_loans"}
@@ -203,7 +184,6 @@ export const LoanDetails = (
       name={"o_loans"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"Insurances_cycle"}
@@ -212,7 +192,6 @@ export const LoanDetails = (
       label={"Insurances"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"Insurances"}
@@ -220,7 +199,6 @@ export const LoanDetails = (
       name={"Insurances"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"cpay_cycle"}
@@ -229,7 +207,6 @@ export const LoanDetails = (
       label={"Credit/Store Card Payments"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"cpay"}
@@ -237,7 +214,6 @@ export const LoanDetails = (
       name={"cpay"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"hp_cycle"}
@@ -246,7 +222,6 @@ export const LoanDetails = (
       label={"Hire Purchase Repayments"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"hpay"}
@@ -254,7 +229,6 @@ export const LoanDetails = (
       name={"hpay"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"Familycare_cycle"}
@@ -263,7 +237,6 @@ export const LoanDetails = (
       label={"Family support or child care"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"familycare"}
@@ -271,7 +244,6 @@ export const LoanDetails = (
       name={"familycare"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"ppp_cycle"}
@@ -280,7 +252,6 @@ export const LoanDetails = (
       label={"Power/Phone/Petrol"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"ppp"}
@@ -288,7 +259,6 @@ export const LoanDetails = (
       name={"ppp"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"food_cycle"}
@@ -297,7 +267,6 @@ export const LoanDetails = (
       label={"Food"}
       component={FormDropDownList}
       data={cycle}
-      validator={requiredValidator}
     />
     <Field
       key={"food"}
@@ -305,7 +274,6 @@ export const LoanDetails = (
       name={"food"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -317,7 +285,6 @@ export const LoanDetails = (
       name={"t_expenditure"}
       placeholder={"Amount $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -330,7 +297,6 @@ export const LoanDetails = (
       label={"First Mortgage"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_household"}
@@ -339,7 +305,6 @@ export const LoanDetails = (
       label={"Motor Vehicles"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_motor"}
@@ -348,7 +313,6 @@ export const LoanDetails = (
       label={"Overdrafts"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_savings"}
@@ -357,7 +321,6 @@ export const LoanDetails = (
       label={"Credit Card Debt"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_home"}
@@ -366,7 +329,6 @@ export const LoanDetails = (
       label={"Store cards/Hire purchases"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_household"}
@@ -375,7 +337,6 @@ export const LoanDetails = (
       label={"Student Loan"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <Field
       key={"a_motor"}
@@ -384,7 +345,6 @@ export const LoanDetails = (
       label={"Personal Loan/s"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
     <br />
     <p>
@@ -397,7 +357,6 @@ export const LoanDetails = (
       placeholder={"Estimated Value $"}
       placeholder={"Estimated Value $"}
       component={FormInput}
-      validator={driverValidator}
     />
   </div>
 );
