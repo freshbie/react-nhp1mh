@@ -118,7 +118,6 @@ export const LoanDetails = (
     <p>
       <b>What do you own(Assets) ?</b>
     </p>
-    <br />
     <Field
       key={"a_home"}
       id={"a_home"}
@@ -165,6 +164,158 @@ export const LoanDetails = (
       name={"t_assets"}
       placeholder={"Estimated Value $"}
       placeholder={"Estimated Value $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <br />
+    <p>
+      <b>Expenditure</b>
+    </p>
+    <Field
+      key={"rent_cycle"}
+      id={"rent_cycle"}
+      name={"rent_cycle"}
+      label={"Mortage/Rent/Board"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"rent"}
+      id={"rent"}
+      name={"rent"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"loan_cycle"}
+      id={"loan_cycle"}
+      name={"loan_cycle"}
+      label={"Other loans"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"o_loans"}
+      id={"o_loans"}
+      name={"o_loans"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"Insurances_cycle"}
+      id={"Insurances_cycle"}
+      name={"Insurances_cycle"}
+      label={"Insurances"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"Insurances"}
+      id={"Insurances"}
+      name={"Insurances"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"cpay_cycle"}
+      id={"cpay_cycle"}
+      name={"cpay_cycle"}
+      label={"Credit/Store Card Payments"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"cpay"}
+      id={"cpay"}
+      name={"cpay"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"hp_cycle"}
+      id={"hp_cycle"}
+      name={"hp_cycle"}
+      label={"Hire Purchase Repayments"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"hpay"}
+      id={"hpay"}
+      name={"hpay"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"Familycare_cycle"}
+      id={"Familycare_cycle"}
+      name={"Familycare_cycle"}
+      label={"Family support or child care"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"familycare"}
+      id={"familycare"}
+      name={"familycare"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"ppp_cycle"}
+      id={"ppp_cycle"}
+      name={"ppp_cycle"}
+      label={"Power/Phone/Petrol"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"ppp"}
+      id={"ppp"}
+      name={"ppp"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <Field
+      key={"food_cycle"}
+      id={"food_cycle"}
+      name={"food_cycle"}
+      label={"Food"}
+      component={FormDropDownList}
+      data={cycle}
+      validator={requiredValidator}
+    />
+    <Field
+      key={"food"}
+      id={"food"}
+      name={"food"}
+      placeholder={"Amount $"}
+      component={FormInput}
+      validator={driverValidator}
+    />
+    <br />
+    <p>
+      <b>Total Expenditure(Monthly)</b>
+    </p>
+    <Field
+      key={"t_expenditure"}
+      id={"t_expenditure"}
+      name={"t_expenditure"}
+      placeholder={"Amount $"}
       component={FormInput}
       validator={driverValidator}
     />
