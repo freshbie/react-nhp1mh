@@ -295,57 +295,57 @@ export const LoanDetails = (
       <b>What do you owe(Liabilities) ?</b>
     </p>
     <Field
-      key={"a_home"}
-      id={"a_home"}
-      name={"a_home"}
+      key={"a_firstmortage"}
+      id={"a_firstmortage"}
+      name={"a_firstmortage"}
       label={"First Mortgage"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_household"}
-      id={"a_household"}
-      name={"a_household"}
+      key={"a_motorvehicle"}
+      id={"a_motorvehicle"}
+      name={"a_motorvehicle"}
       label={"Motor Vehicles"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_motor"}
-      id={"a_motor"}
-      name={"a_motor"}
+      key={"a_over"}
+      id={"a_over"}
+      name={"a_over"}
       label={"Overdrafts"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_savings"}
-      id={"a_savings"}
-      name={"a_savings"}
+      key={"a_cc"}
+      id={"a_cc"}
+      name={"a_cc"}
       label={"Credit Card Debt"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_home"}
-      id={"a_home"}
+      key={"a_store"}
+      id={"a_store"}
       name={"a_home"}
       label={"Store cards/Hire purchases"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_household"}
-      id={"a_household"}
-      name={"a_household"}
+      key={"a_student"}
+      id={"a_student"}
+      name={"a_student"}
       label={"Student Loan"}
       placeholder={"Estimated Value $"}
       component={FormInput}
     />
     <Field
-      key={"a_motor"}
-      id={"a_motor"}
-      name={"a_motor"}
+      key={"a_personal"}
+      id={"a_personal"}
+      name={"a_personal"}
       label={"Personal Loan/s"}
       placeholder={"Estimated Value $"}
       component={FormInput}
@@ -355,9 +355,9 @@ export const LoanDetails = (
       <b>Total Liabilities</b>
     </p>
     <Field
-      key={"t_assets"}
-      id={"t_assets"}
-      name={"t_assets"}
+      key={"t_liabilities"}
+      id={"t_liabilities"}
+      name={"t_liabilities"}
       placeholder={"Estimated Value $"}
       placeholder={"Estimated Value $"}
       component={FormInput}
