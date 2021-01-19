@@ -42,7 +42,8 @@ export const App = () => {
       setFormState(values);
 
       if (isLastStep) {
-        alert(JSON.stringify(values));
+        //alert(JSON.stringify(values));
+        document.getElementById("loanapp").innerHTML = JSON.stringify(values);
       }
     },
     [step, steps, setSteps, setStep, setFormState, isLastStep]
@@ -63,6 +64,7 @@ export const App = () => {
         flexDirection: "column",
         justifyContent: "center"
       }}
+      id={"loanapp"}
     >
       <Stepper value={step} items={steps} />
       <Form

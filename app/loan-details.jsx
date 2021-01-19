@@ -329,7 +329,7 @@ export const LoanDetails = (
     <Field
       key={"a_store"}
       id={"a_store"}
-      name={"a_home"}
+      name={"a_store"}
       label={"Store cards/Hire purchases"}
       placeholder={"Estimated Value $"}
       component={FormInput}
