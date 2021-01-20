@@ -24,6 +24,14 @@ export const AccountDetails = (
       <b>Main Applicant</b>
     </p>
     <Field
+      key={"member_no"}
+      id={"member_no"}
+      name={"member_no"}
+      label={"Member Number"}
+      hint={"If Known"}
+      component={FormInput}
+    />
+    <Field
       key={"title"}
       id={"title"}
       name={"title"}
