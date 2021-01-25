@@ -42,7 +42,6 @@ export const App = () => {
       setFormState(values);
 
       if (isLastStep) {
-        //alert(JSON.stringify(values));
         document.getElementById("loanapp").innerHTML = JSON.stringify(values);
       }
     },
@@ -72,7 +71,7 @@ export const App = () => {
         onSubmitClick={onStepSubmit}
         render={formRenderProps => (
           <div style={{ alignSelf: "center" }}>
-            <FormElement style={{ width: 480 }}>
+            <FormElement style={{ width: 700 }}>
               {stepPages[step]}
               <span
                 style={{ marginTop: "40px" }}
