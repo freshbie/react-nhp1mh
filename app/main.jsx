@@ -83,7 +83,7 @@ export const App = () => {
                 }}
                 className={"k-form-buttons k-buttons-end"}
               >
-                <span style={{ alignSelf: "center" }}>
+                <span style={{ alignSelf: "center", visibility: "hidden" }}>
                   Step {step + 1} of 3
                 </span>
                 <div>
