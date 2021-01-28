@@ -63,7 +63,6 @@ export const App = () => {
         flexDirection: "column",
         justifyContent: "center"
       }}
-      id={"loanapp"}
     >
       <Stepper value={step} items={steps} />
       <Form
@@ -71,7 +70,7 @@ export const App = () => {
         onSubmitClick={onStepSubmit}
         render={formRenderProps => (
           <div style={{ alignSelf: "center" }}>
-            <FormElement style={{ width: 700 }}>
+            <FormElement style={{ width: 600 }}>
               {stepPages[step]}
               <span
                 style={{ marginTop: "40px" }}
@@ -84,12 +83,16 @@ export const App = () => {
                 }}
                 className={"k-form-buttons k-buttons-end"}
               >
+                <span style={{ alignSelf: "center" }}>
+                  Step {step + 1} of 3
+                </span>
                 <div>
                   {step !== 0 ? (
                     <Button
                       style={{
                         marginRight: "16px",
-                        backgroundColor: "#BBBB14"
+                        backgroundColor: "#BBBB14",
+                        color: "#000000"
                       }}
                       onClick={onPrevClick}
                     >

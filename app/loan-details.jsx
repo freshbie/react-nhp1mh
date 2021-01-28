@@ -62,7 +62,6 @@ export const LoanDetails = (
     <p>
       <b>Please fill in the table below</b>
     </p>
-    <br />
     <p>
       <b>Income</b>
     </p>
