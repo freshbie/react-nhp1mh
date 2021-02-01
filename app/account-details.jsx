@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { Field } from "@progress/kendo-react-form";
 
 import { FormInput, FormRadioGroup } from "./form-components.jsx";
@@ -18,7 +17,7 @@ import {
 import { title, resident, lihold, emp } from "./data.jsx";
 
 export const AccountDetails = (
-  <div>
+  <div id={"Acc_Details"}>
     <br />
     <p>
       <b>Main Applicant</b>
